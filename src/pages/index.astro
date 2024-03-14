@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	
 	<div class="container">
 		<div class="wrapper">
 			<div class="box img1">img1</div>
@@ -18,12 +19,13 @@ import Card from '../components/Card.astro';
 			<div class="box img10">img10</div>
 		</div>
 	</div>
+
 </Layout>
 
 <style>
 	.wrapper{
 	display: grid;
-	grid-template-rows: 30em 30em 30em 30em ;
+	grid-template-rows: 120px 120px 120px 120px;
 	grid-template-areas: 
 		"img1 img1 img2 img3"
 		"img1 img1 img6 img6"
@@ -82,5 +84,5 @@ import Card from '../components/Card.astro';
 	.img10{
 		grid-area: img10;
 		background: rgb(225, 228, 47);
-	
+	}
 </style>
